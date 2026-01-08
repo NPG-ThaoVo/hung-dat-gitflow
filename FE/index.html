@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind config (shadcn-like) -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: "#ffffff",
+              foreground: "#020817",
+              primary: "#020817",
+              muted: "#f1f5f9",
+              border: "#e5e7eb",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="bg-background text-foreground antialiased">
+    <!-- Header -->
+    <header class="border-b border-border">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <h1 class="text-lg font-semibold">MyProduct</h1>
+        <nav class="space-x-6 text-sm">
+          <a href="#" class="hover:underline">Features</a>
+          <a href="#" class="hover:underline">Pricing</a>
+          <a href="#" class="hover:underline">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-24">
+      <div class="max-w-3xl mx-auto text-center px-6">
+        <h2 class="text-4xl font-bold tracking-tight">
+          Build faster with a clean landing page
+        </h2>
+        <p class="mt-6 text-muted-foreground text-lg text-gray-600">
+          A minimal landing page built with TailwindCSS and shadcn-inspired
+          design principles.
+        </p>
+
+        <div class="mt-8 flex justify-center gap-4">
+          <button
+            class="rounded-md bg-primary text-white px-6 py-3 text-sm font-medium hover:opacity-90"
+          >
+            Get Started
+          </button>
+          <button
+            class="rounded-md border border-border px-6 py-3 text-sm font-medium hover:bg-muted"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-20 bg-muted">
+      <div class="max-w-7xl mx-auto px-6">
+        <h3 class="text-2xl font-semibold text-center mb-12">
+          Why choose this?
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="rounded-xl border border-border bg-background p-6">
+            <h4 class="font-semibold mb-2">Simple</h4>
+            <p class="text-sm text-gray-600">
+              Clean structure, easy to customize and extend.
+            </p>
+          </div>
+
+          <div class="rounded-xl border border-border bg-background p-6">
+            <h4 class="font-semibold mb-2">Modern</h4>
+            <p class="text-sm text-gray-600">
+              Inspired by shadcn/ui and modern UI principles.
+            </p>
+          </div>
+
+          <div class="rounded-xl border border-border bg-background p-6">
+            <h4 class="font-semibold mb-2">Responsive</h4>
+            <p class="text-sm text-gray-600">
+              Works perfectly on mobile, tablet, and desktop.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24">
+      <div
+        class="max-w-4xl mx-auto rounded-2xl border border-border p-12 text-center"
+      >
+        <h3 class="text-3xl font-bold">
+          Ready to get started?
+        </h3>
+        <p class="mt-4 text-gray-600">
+          Start building your project with a clean foundation.
+        </p>
+
+        <button
+          class="mt-8 rounded-md bg-primary text-white px-8 py-3 text-sm font-medium hover:opacity-90"
+        >
+          Start Now
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-border py-6">
+      <div class="max-w-7xl mx-auto px-6 text-center text-sm text-gray-500">
+        © 2026 MyProduct. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
