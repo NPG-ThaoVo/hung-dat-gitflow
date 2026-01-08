@@ -13,17 +13,21 @@ A modern React application built with Vite, styled with Tailwind CSS and Shadcn 
 ## 📋 Prerequisites
 
 Before you begin, ensure you have the following installed:
+
 - Node.js (version 16.x or higher)
 - npm or yarn or pnpm
 
-## 🛠️ Installation
+## 🛠️ Installation Steps
 
-1. Navigate to the frontend directory:
+1. Clone the repository:
+
 ```bash
-cd FE
+git clone https://github.com/your-repo-url.git
+cd your-repo-name
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 # or
@@ -32,9 +36,8 @@ yarn install
 pnpm install
 ```
 
-## 🏃 Running the Application
+3. Start the development server:
 
-### Development Mode
 ```bash
 npm run dev
 # or
@@ -43,9 +46,12 @@ yarn dev
 pnpm dev
 ```
 
-The application will start on `http://localhost:5173`
+4. Open your browser and navigate to `http://localhost:3000` to see the application in action.
 
-### Build for Production
+## 📦 Usage
+
+- To build the application for production:
+
 ```bash
 npm run build
 # or
@@ -54,13 +60,14 @@ yarn build
 pnpm build
 ```
 
-### Preview Production Build
+- To run tests:
+
 ```bash
-npm run preview
+npm test
 # or
-yarn preview
+yarn test
 # or
-pnpm preview
+pnpm test
 ```
 
 ## 📁 Project Structure
@@ -86,6 +93,7 @@ FE/
 ## 🎨 Tailwind CSS Configuration
 
 Tailwind CSS is configured in `tailwind.config.js`. You can customize:
+
 - Colors
 - Spacing
 - Typography
@@ -101,6 +109,7 @@ npx shadcn-ui@latest add [component-name]
 ```
 
 Example:
+
 ```bash
 npx shadcn-ui@latest add button
 npx shadcn-ui@latest add card
@@ -109,12 +118,12 @@ npx shadcn-ui@latest add dialog
 
 ## 📜 Available Scripts
 
-| Script | Description |
-|--------|-------------|
-| `npm run dev` | Start development server |
-| `npm run build` | Build for production |
+| Script            | Description              |
+| ----------------- | ------------------------ |
+| `npm run dev`     | Start development server |
+| `npm run build`   | Build for production     |
 | `npm run preview` | Preview production build |
-| `npm run lint` | Run ESLint |
+| `npm run lint`    | Run ESLint               |
 
 ## 🔧 Configuration Files
 
@@ -126,9 +135,10 @@ npx shadcn-ui@latest add dialog
 ## 📦 Dependencies
 
 Key dependencies include:
+
 - react & react-dom
 - tailwindcss
-- @radix-ui/* (for Shadcn UI)
+- @radix-ui/\* (for Shadcn UI)
 - class-variance-authority
 - clsx & tailwind-merge
 
@@ -141,6 +151,7 @@ VITE_API_URL=your_api_url_here
 ```
 
 Access in your code:
+
 ```javascript
 const apiUrl = import.meta.env.VITE_API_URL;
 ```
@@ -162,11 +173,6 @@ const apiUrl = import.meta.env.VITE_API_URL;
 
 ## 🤝 Contributing
 
-1. Create a feature branch
-2. Make your changes
-3. Test thoroughly
-4. Submit a pull request
-
 ## 📄 License
 
-[Specify your license here]
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
